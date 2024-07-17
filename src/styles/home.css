@@ -1,0 +1,118 @@
+:root {
+    --widthSize: max(550px,50vw);
+    --contentWidth: 70%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 98vh;
+    width: 98vw;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: var(--widthSize);
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 11px 7px 19px 4px rgba(0,0,0,0.77);
+    border: 3px solid rgb(131, 37, 37);
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+nav {
+    display: flex;
+    position: sticky; 
+}
+
+nav > ul {
+    padding: 0px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    width: var(--widthSize);
+    justify-items: center;
+}
+
+.navButton {
+    font-size: 2rem;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    justify-self: stretch;
+    font-weight: bold;
+}
+
+#content > h1 {
+    text-align: center;
+    width: var(--widthSize);
+    color: rgb(131, 37, 37);
+    font-size: 3rem;
+    padding: 0px 10px 0px 10px;
+    margin-top: 15px ;
+}
+
+li > svg {
+    height: 100px;
+    width: 100px;
+}
+
+nav > ul > li {
+    display: grid;
+    justify-self: stretch;
+}
+
+#hours > ul > li {
+    display: inline;
+}
+
+#hours {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    width: var(--contentWidth);   
+    border-radius: 10%;
+    flex-direction: column;
+}
+
+#hours > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+#hours > h2 {
+    align-self: center;
+    margin: 10px 0px 10px 0px;
+    font-size: 2rem;
+}
+
+#location {
+    width: var(--contentWidth);
+    border-radius: 10px;
+    border: 2px solid black;
+    display: flex;
+}
+
+#location > img {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+#location > h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    background-color: rgba(165, 42, 42, 0.322);
+}
