@@ -1,7 +1,4 @@
-import "./styles/home.css";
-import stone from "./assets/Bnsda3.jpg";
+import {loadHome} from "./modules/home";
 
-const body = document.querySelector('body');
-body.style.backgroundImage = `url(${stone})`;
+loadHome();
 
-    
