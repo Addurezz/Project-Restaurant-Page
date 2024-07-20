@@ -3,10 +3,11 @@
     src: url("../assets/fonts/GreatVibes-Regular.ttf");
 }
 
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 body {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
     background-color: #331f15;
     height: 200vh;
 }
@@ -43,4 +44,35 @@ h1 {
     box-shadow: 0 0 10px 15px hsl(0, 0%, 0%, 0.6);
     text-align: center;
     padding-bottom: 35px;
+}
+
+.menuCard > img {
+    height: 400px;
+}
+
+.menuCard {
+    border: 1px solid rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    color: white;
+    font-size: 1.7rem;
+    margin: 10px;
+}
+
+.menuCard > div {
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.menuCard > div > button {
+    font-size: 1.7rem;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid rgb(151, 151, 151);
+    outline: 5px solid white;
+    font-weight: bold;
+}
+
+.menuCardDiv {
+    margin-top: 40px;
+    border: 1px solid white;
 }
