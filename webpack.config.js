@@ -37,7 +37,7 @@ module.exports = {
             loader: 'svg-inline-loader'
         },
         {
-          test: /\.(woff|woff2|ttf)$/,
+          test: /\.(woff|woff2|ttf|otf)$/,
           use: {
             loader: 'url-loader',
           },

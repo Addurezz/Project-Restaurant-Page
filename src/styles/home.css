@@ -1,15 +1,18 @@
 @font-face {
     font-family: "Great Vibes";
-    src: url("../assets/fonts/GreatVibes-Regular.ttf");
+    src: url("../assets/fonts/GreatVibes-Regular.otf");
 }
 
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: default;
 }
 
 body {
-    background-color: #331f15;
-    height: 200vh;
+    background-image: url("../assets/dark-wooden-texture-surface.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed ;
 }
 
 .imageContainer {
@@ -33,7 +36,7 @@ body {
 
 h1 {
     color: rgb(245, 234, 214);
-    font-family: "Great Vibes", sans-serif ;
+    font-family: "Great Vibes", sans-serif;
     position: absolute;
     left: 50%;
     top:40%;
@@ -53,10 +56,18 @@ h1 {
 .menuCard {
     border: 1px solid rgb(255, 255, 255);
     display: grid;
-    grid-template-columns: 1fr 4fr;
     color: white;
     font-size: 1.7rem;
     margin: 10px;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+.card1 {
+    grid-template-columns: 1fr 4fr;
+}
+
+.card2 {
+    grid-template-columns: 4fr 1fr ;
 }
 
 .menuCard > div {
@@ -68,11 +79,17 @@ h1 {
     border-radius: 20px;
     padding: 10px;
     border: 1px solid rgb(151, 151, 151);
-    outline: 5px solid white;
+    outline: 5px solid rgb(255, 255, 255);
     font-weight: bold;
 }
 
 .menuCardDiv {
     margin-top: 40px;
     border: 1px solid white;
+}
+
+button:hover {
+    transform: scale(1.07);
+    background-color: rgb(223, 223, 223);
+    cursor: pointer;
 }
