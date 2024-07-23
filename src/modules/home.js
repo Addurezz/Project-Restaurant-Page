@@ -5,6 +5,9 @@ import kitchen from "../assets/kitchen.jpg";
 const loadHome = () => {
     const content = document.querySelector("#content");
 
+    //clear page
+    content.innerHTML = "";
+
     //create h1 element
     const h1 = document.createElement("h1");
     h1.textContent = "Classic Cuts";
@@ -26,4 +29,4 @@ const loadHome = () => {
     about();
 }
 
-export {loadHome}
+export default loadHome

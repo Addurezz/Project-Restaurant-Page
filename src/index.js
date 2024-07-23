@@ -1,4 +1,4 @@
-import {loadHome} from "./modules/home";
+import loadHome from "./modules/home";
 import background from "./assets/dark-wooden-texture-surface.jpg";
 
 const body = document.querySelector("body");

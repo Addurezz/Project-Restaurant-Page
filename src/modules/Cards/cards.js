@@ -1,5 +1,6 @@
 import food from "../../assets/food.jpeg";
-import aboutUs from "../../assets/about.jpg"
+import aboutUs from "../../assets/about.jpg";
+import loadMenu from "../menu";
 
 const menu = () => {
     //create elements for card
@@ -20,6 +21,9 @@ const menu = () => {
     foodPicture.src = food;
     menuH2.textContent = "Unsere Speisekarte";
     menuP.textContent = "Für uns ist Qualität das A & O. Sie finden in unserer Speisekarte eine ganze Reihe Auswahl, von Steaks und Pasta bis hin zu vegetarischen Gerichten. Lassen Sie sich begeistern und schauen sie rein";
+
+    //button
+    menuBtn.addEventListener("click", () => loadMenu())
 
     //append elements to display card
     menuText.appendChild(menuH2);

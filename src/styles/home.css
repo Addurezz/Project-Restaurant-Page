@@ -12,16 +12,18 @@ body {
     background-image: url("../assets/dark-wooden-texture-surface.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed ;
+    background-attachment: fixed;
+    margin: 0px;
+    margin-bottom: 30px;
 }
 
 .imageContainer {
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-position: center;
     background-attachment: fixed;
     height: 1000px;
     width: 100%;
-
+    background-size: cover;
 }
 
 .imageContainer > p {
@@ -32,6 +34,10 @@ body {
     font-weight: bold;
     margin: 0 auto; 
     position: absolute; 
+}
+
+.imageContainer > img {
+    width: 100%;
 }
 
 h1 {
@@ -50,7 +56,7 @@ h1 {
 }
 
 .menuCard > img {
-    height: 400px;
+   width: 700px
 }
 
 .menuCard {
@@ -86,6 +92,8 @@ h1 {
 .menuCardDiv {
     margin-top: 40px;
     border: 1px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 button:hover {
