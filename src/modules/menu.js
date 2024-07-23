@@ -1,21 +1,19 @@
+import "../styles/menu.css";
+import loadDishes from "./helper/dishes";
+import {home} from "./helper/cards";
+
 const loadMenu = () => {
+    console.log("menu.js loaded");
     const content = document.querySelector("#content");
 
     //clear page
     content.innerHTML = "";
+    
+    //load dishes
+    loadDishes();
 
-    //create elements
-    const menuDiv = document.createElement("div");
-
-
-    //set classes for styling
-    menuDiv.setAttribute("class","menuDiv");
-
-
-
-
-    //append to content
-    content.appendChild(menuDiv)
+    //add cards
+    home()
 }
 
 export default loadMenu

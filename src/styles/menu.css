@@ -1,0 +1,19 @@
+.menuDiv {
+    background-color: antiquewhite ;
+    padding: 40px 20px 40px 20px;
+    margin: 20px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.dish {
+    border: 1px solid black;
+    padding: 10px;
+    flex: 1;
+}

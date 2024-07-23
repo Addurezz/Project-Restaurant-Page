@@ -1,5 +1,5 @@
 import "../styles/home.css";
-import {menu, about} from "./Cards/cards";
+import {menu, about} from "./helper/cards";
 import kitchen from "../assets/kitchen.jpg";
 
 const loadHome = () => {

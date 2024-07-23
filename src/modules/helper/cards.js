@@ -1,6 +1,7 @@
 import food from "../../assets/food.jpeg";
 import aboutUs from "../../assets/about.jpg";
 import loadMenu from "../menu";
+import loadHome from "../home";
 
 const menu = () => {
     //create elements for card
@@ -23,7 +24,10 @@ const menu = () => {
     menuP.textContent = "Für uns ist Qualität das A & O. Sie finden in unserer Speisekarte eine ganze Reihe Auswahl, von Steaks und Pasta bis hin zu vegetarischen Gerichten. Lassen Sie sich begeistern und schauen sie rein";
 
     //button
-    menuBtn.addEventListener("click", () => loadMenu())
+    menuBtn.addEventListener("click", () => {
+        console.log("MenuBtn Ok")
+        loadMenu();
+    })
 
     //append elements to display card
     menuText.appendChild(menuH2);
@@ -69,4 +73,14 @@ const about = () => {
     content.appendChild(menuCardDiv)
 }
 
-export {menu,about}
+const home = () => {
+    const content = document.querySelector("#content");
+    const menuBtn = document.createElement("button");
+    menuBtn.innerText = "Zurück zur Homepage";
+
+    menuBtn.addEventListener("click", () => loadHome());
+
+    content.appendChild(menuBtn)
+}
+
+export {menu,about,home}
