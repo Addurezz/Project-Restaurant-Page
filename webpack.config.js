@@ -7,7 +7,6 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/Project-Restaurant-Page/'
     },
     plugins: [
         new HtmlWebpackPlugin({
